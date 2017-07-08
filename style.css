@@ -1,0 +1,246 @@
+body{
+	margin:0;
+	padding: 0;
+	background: #edeef0;
+}
+
+.rozc{
+	height: 50px;
+	width: 1349px;
+	border: px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	background: 
+} 
+.img0{
+	width: 1349px;
+	height: 40px;
+	background-image: linear-gradient(to right,gold ,gray 50%,gold );
+	background: #323232;
+	margin-top: 20px;
+	
+
+
+}
+.img0::before{
+	content: "</HTML>";
+	color: white;
+	font-size: 25px;
+	margin-top: 7px;
+	margin-left: 150px;
+	position: absolute;
+}
+.img0::after{
+	content: "CSS{}";
+	color: white;
+	position: absolute;
+	font-size: 25px;
+	margin-left: 1100px;
+	margin-top: 7px;
+}
+.obg{
+	width: 420px;
+	height: 60px;
+	border: 3px solid #7cff04;
+	position: absolute;
+	margin-top: -53px;
+	margin-left: 465px;
+	background: #323232;
+
+
+
+}
+.aside{
+	 width: 400px;
+	 height: 40px;
+	 border:px solid white;
+	 position: absolute;
+	 margin-top: 10px;
+	 margin-left: 10px;
+	 background: #7cff04;
+	 box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	 border-radius:px;
+}
+aside{
+	float: left;
+	margin-left: 120px;
+	margin-top: -5px
+}
+.vnyt{
+	width: 700px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background: yellow;
+	border-left: none;
+
+}
+a.a1{
+	text-decoration: none;
+	color: black;
+	float: right;
+	border:px solid black;
+	font-size: 17px;
+	height: 19px;
+	padding-top: 12px;
+	margin-right: 20px;
+	padding-bottom: 9px;
+	margin-top: 5px
+
+}
+a.a1:hover{
+	color: black;
+	transform: scale(1.1);
+	background:
+}
+										/*header the and*/
+.zov{
+	width: 1330px;
+	height: 1100px;
+	border:px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px
+}
+.left-block{
+	width:270px;
+	height: 830px;
+	border: px solid black;
+	background: white;
+	position: absolute;
+	margin-left: 25px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4)
+}
+.img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	margin-top: 25px;
+}
+p.h1{
+	font-size: 21px;
+	text-align: center;
+	
+}
+.div-menu{
+	border: px solid black;
+	width: 220px;
+	height: 620px;
+	position: absolute;
+	margin-left: -35px;
+	margin-top: -8px;
+}
+.menu{
+	border: px solid black;
+	width: 220px;
+	height: 27px;
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	padding-top: 4px;
+	margin-left:  auto;
+	margin-bottom: 3px;
+	margin-right: auto;
+	background:  #00CD00;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.3);
+}
+.menu:hover{
+	animation-name: men;
+	animation-duration: 0.2s;
+	animation-iteration-count: 2;
+	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
+	background-image: linear-gradient(#00CD00,yellow,#00CD00);
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;		
+}
+@keyframes men{            
+	70%{
+		transform: translateX(10px);
+	}
+}
+								/*left-block the and*/
+.cent{
+	width: 700px;
+	height: 1000px;
+	border: px solid black;
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+	position: absolute;
+	margin-top: px;
+	margin-left: 314px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4)
+}
+.osnovy{
+	width: 700px;
+	height: 40px;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+	margin-top: 20px;
+	text-align:center;
+}
+h1.osn{
+
+	font-size: 23px;
+	
+}
+h1.zag{
+	font-size: 25px;
+	text-align: center
+}
+.ifrm{
+	border: px solid black;
+	width: 660px;
+	height: 860px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.6)
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+									/*Center the and*/
+.right-block{
+	width:270px;
+	height: 830px;
+	border: px solid black;
+	float: right;
+	background: white;
+	margin-right: 25px;
+	position: absolute;
+	margin-left: 1032px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4)
+}
+.img2{
+	width: 150px;
+	height: 150px;
+	border: px solid black;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
+}
+.menu2{
+	border: px solid black;
+	width: 220px;
+	height: 27px;
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	padding-top: 4px;
+	margin-left:  auto;
+	margin-bottom: 3px;
+	margin-right: auto;
+	background:  #00CD00;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.3);
+}
+.div-menu2{
+	border: px solid black;
+	width: 220px;
+	height: 620px;
+	position: absolute;
+	margin-left: -35px;
+	margin-top:18px;
+}
