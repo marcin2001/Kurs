@@ -1,15 +1,14 @@
 body{
 	margin:0;
 	padding: 0;
-	background: #edeef0;
+	background: #f7f7f7;
 }
 
 .rozc{
 	height: 40px;
 	border: px solid black;
-	margin-left: auto;
-	margin-right: auto;
-	background:#323232
+
+	background:#323232;
 }
 .img0{
 	width: 1349px;
@@ -19,25 +18,7 @@ body{
 	margin-top: 15px;
 	margin-right: auto;
 	margin-left: auto;
-
-
-
-}
-.img0::before{
-	content: "</HTML>";
-	color: white;
-	font-size: 25px;
-	margin-top: 7px;
-	margin-left: 150px;
-	position: absolute;
-}
-.img0::after{
-	content: "CSS{}";
-	color: white;
-	position: absolute;
-	font-size: 25px;
-	margin-left: 1100px;
-	margin-top: 7px;
+	border: px solid white;
 }
 .obg{
 	width: 470px;
@@ -83,6 +64,13 @@ aside{
 	margin-right: 105px;
 	margin-top: -6px
 }
+.im{
+	display: block;
+	margin-left: 0px;
+	position: absolute;
+}
+
+
 .vnyt{
 	width: 700px;
 	height: 50px;
@@ -96,19 +84,19 @@ a.a1{
 	text-decoration: none;
 	color: black;
 	float: right;
-	border:px solid black;
 	font-size: 17px;
 	height: 19px;
 	padding-top: 12px;
 	margin-right: 20px;
 	padding-bottom: 9px;
-	margin-top: 5px
+	margin-top: 5px;
+	font-weight: bolder;
 
 }
+
 a.a1:hover{
 	color: white;
 	transform: scale(1.1);
-	background:
 }
 										/*header the and*/
 .zov{
@@ -139,7 +127,7 @@ a.a1:hover{
 p.h1{
 	font-size: 21px;
 	text-align: center;
-	
+
 }
 .div-menu{
 	border: px solid black;
@@ -163,16 +151,18 @@ p.h1{
 	background:  #00CD00;
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.3);
 }
+
 .menu:hover{
 	animation-name: men;
 	animation-duration: 0.2s;
+	animation-delay: ;
 	animation-iteration-count: 2;
 	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
 	background-image: linear-gradient(#00CD00,yellow,#00CD00);
 	border-bottom-right-radius: 50px;
-	border-top-right-radius: 50px;		
+	border-top-right-radius: 50px;
 }
-@keyframes men{            
+@keyframes men{
 	70%{
 		transform: translateX(10px);
 	}
@@ -200,7 +190,7 @@ p.h1{
 h1.osn{
 
 	font-size: 23px;
-	
+
 }
 h1.zag{
 	font-size: 25px;
@@ -242,7 +232,7 @@ a{
 .menu2{
 	border: px solid black;
 	width: 220px;
-	height: 27px;
+	height: 32px;
 	font-size: 20px;
 	position: relative;
 	text-align: center;
@@ -252,6 +242,26 @@ a{
 	margin-right: auto;
 	background:  #00CD00;
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.3);
+}
+@keyframes men2 {
+	70%{
+		transform: translateX(-10px);
+	}
+}
+.menu2:hover{
+	animation-name: men2;
+	animation-duration: 0.2s;
+	animation-delay: ;
+	animation-iteration-count: 2;
+	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
+	background-image: linear-gradient(#00CD00,yellow,#00CD00);
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+}
+button{
+
+	outline: none;
+	border: none
 }
 .div-menu2{
 	border: px solid black;
