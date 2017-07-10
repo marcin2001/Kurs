@@ -35,7 +35,7 @@ body{
 }
 a.a1{
 	text-decoration: none;
-	color: black;
+	color: white;
 	float: right;
 	font-size: 17px;
 	height: 19px;
@@ -48,7 +48,7 @@ a.a1{
 }
 
 a.a1:hover{
-	color: white;
+	color: lightgray;
 	transform: scale(1.1);
 }
 										/*header the and*/
