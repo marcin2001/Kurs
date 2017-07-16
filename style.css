@@ -1,3 +1,134 @@
+.hol1{
+			width: 40px;
+			height: 40px;
+			border:px solid black;
+			margin-top: 10px;
+			margin-right: 20px;
+			float: right;
+			background: #2d2d44;
+		}
+		.d1{
+			width: 30px;
+			height: 2.5px;
+			border: px solid black;
+			margin-left: 5px;
+			margin-top: 7.5px;
+			background: black;
+			position: absolute;
+			background: white
+			
+		}
+
+		
+		.hol1:hover .d1{
+			transform: rotate(-45deg);
+			margin-top: 15px;
+			transition-duration: 0.2s;
+			animation-timing-function: 
+
+		}
+
+		.hol1:hover{
+			width: 40px;
+			transform: translateX(px);
+		}
+
+		.d2{
+			width: 30px;
+			height: 2px;
+			border: px solid black;
+			margin-left: 5px;
+			margin-top: 15px;
+			background: black;
+			position: absolute;
+			background: white
+		}
+		.hol1:hover .d2{
+			display: none;
+		}
+		.d3{
+			width: 30px;
+			height: 2.5px;
+			border: px solid black;
+			margin-left: 5px;
+			margin-top: 21.5px;
+			background: black;
+			position: absolute;
+			background: white
+			
+			
+		}
+
+
+		.hol1:hover .d3{
+			transform: rotate(45deg);
+			margin-top: 15px;
+			transition-duration: 0.2s
+
+		}
+
+		.d4{
+			width: 150px;
+			height: 80px;
+			border:px solid black;
+			margin-top: 40px;
+			position: absolute;
+			display: none;
+		}
+		.hol1:hover .d4{
+			display: block;
+		}
+
+		.d5, .d6{
+			width: 150px;
+			height: 40px;
+			background: #2d2d44;
+			opacity: 0.9;
+		}
+		.d5:hover{
+			opacity: 1
+		}
+		.d6:hover{
+			opacity: 1
+		}
+		.d6{
+			border-top: 1px solid #11f90d;
+			height: 45px;
+		}
+		.d5{
+			border-top:5px solid #11f90d;
+		}
+		.d{
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			transform: translateY(5px);
+		}
+		.oz{
+			font-size: 17px;
+			margin-top: 9px
+		}
+		.oz1{
+			font-size: 17px;
+			margin-top: 12px;
+
+		}
+		.d5:hover .oz{
+			transform: scale(1.02);
+			opacity: 1
+		}
+		.d6:hover .oz1{
+			transform: scale(1.02);
+			opacity: 1
+
+		}
+		span{
+			margin-top: 20px;
+		}
+
+
+
+
 body{
 	margin:0;
 	padding: 0;
