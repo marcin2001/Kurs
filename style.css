@@ -1,4 +1,4 @@
-.hol1{
+.burger-menu{
 			width: 40px;
 			height: 39px;
 			border:px solid black;
@@ -7,10 +7,9 @@
 			float: right;
 			background: #2d2d44;
 		}
-		.d1{
+		.line1{
 			width: 30px;
 			height: 2.5px;
-			border: px solid black;
 			margin-left: 5px;
 			margin-top: 7.5px;
 			background: black;
@@ -20,36 +19,28 @@
 		}
 
 		
-		.hol1:hover .d1{
+		.burger-menu:hover .line1{
 			transform: rotate(-45deg);
 			margin-top: 15px;
 			transition-duration: 0.2s;
-			animation-timing-function: 
-
 		}
 
-		.hol1:hover{
-			width: 40px;
-			transform: translateX(px);
-		}
 
-		.d2{
+		.line2{
 			width: 30px;
 			height: 2px;
-			border: px solid black;
 			margin-left: 5px;
 			margin-top: 15px;
 			background: black;
 			position: absolute;
 			background: white
 		}
-		.hol1:hover .d2{
+		.burger-menu:hover .line2{
 			display: none;
 		}
-		.d3{
+		.line3{
 			width: 30px;
 			height: 2.5px;
-			border: px solid black;
 			margin-left: 5px;
 			margin-top: 21.5px;
 			background: black;
@@ -60,14 +51,14 @@
 		}
 
 
-		.hol1:hover .d3{
+		.burger-menu:hover .line3{
 			transform: rotate(45deg);
 			margin-top: 15px;
 			transition-duration: 0.2s
 
 		}
 
-		.d4{
+		.burger-link{
 			width: 150px;
 			height: 80px;
 			border:px solid black;
@@ -75,20 +66,20 @@
 			position: absolute;
 			display: none;
 		}
-		.hol1:hover .d4{
+		.burger-menu:hover .burher-link{
 			display: block;
 		}
 
-		.d5, .d6{
+		.link-kursy, .link-oznayomlennya{
 			width: 150px;
 			height: 40px;
 			background: #2d2d44;
 			opacity: 0.9;
 		}
-		.d5:hover{
+		.link-kursy:hover{
 			opacity: 1
 		}
-		.d6:hover{
+		.link-oznayomlennya:hover{
 			opacity: 1
 		}
 		.d6{
