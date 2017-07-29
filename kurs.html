@@ -4,24 +4,26 @@
 	<title> Курс/CSS</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="prostyl.css">
 </head>
 <body>
 <div class="head">
 	<div class="obg">
-		<h1 class="h1">HTML/css</h1>
+		<h1 class="h0">HTML/css</h1>
 			<aside class="aside">
-				<div class="burger-menu">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-				<div class="burger-link">
-				<a href="" class="link-kursy"><div class="d5"><h1 class="oz">Курси</h1></div></a>
-				<a href="" class="link-oznayomlennya"><div class="d6"><h1 class="oz1">Ознайомлення</h1></div></a>
+						
+	<div class="hol1">
+				<div class="d1"></div>
+				<div class="d2"></div>
+				<div class="d3"></div>
+
+			<div class="d4">
+				<a href="" class="d"><div class="d5"><h1 class="oz" >Курси</h1></div></a>
+				<a href="" class="d"><div class="d6"><h1 class="oz1">Ознайомлення</h1></div></a>
 			</div>
 		</div>
 
-		<a href="" class="a1">Головна</a>
+		<a href="" id="k" class="a1">Головна</a>
 				</aside>
 		
 				 	</div>
@@ -30,54 +32,62 @@
 		
 	
 						<!--header the and-->
-	<div class="zov">
-		<div class="hol">
-		<div class="left-block" id="lb">
-			<div class="img">
+	<div class="holovna">
+		<div class="vnytr">
+			<div class="left-block">
+				<div class="img">
 				<img src="foto/html5.png" width="150" height="150">
 				<br>
 				<div class="div-menu">
 				<p class="h1"> <b>Курс №1 <br>"Розмітка тексту"</b></p>
 				
-					<a href="video-h1.html" target="frim"><div class="menu">Тег <b>"h1"</b></div></a>
-					<a href="video-p.html" target="frim"><div class="menu">Тег <b>"p"</b></div></a>
-					<a href="video-br.html" target="frim"><div class="menu">Тег <b>"br"</b></div></a>
-					<a href="video-ul+li.html" target="frim"><div class="menu">Тег <b>"ul"+"li"</b></div></a>
-					<a href="video-ol+li.html" target="frim"><div class="menu">Тег <b>"ul"+"ol"</b></div></a>
-					<a href="video-hr.html" target="frim"><div class="menu">Тег <b>"hr"</b></div></a>
-					<a href="video-strong.html" target="frim"><div class="menu">Тег  <b>"strong"</b></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
-					<a href="" target="frim"><div class="menu"></div></a>
+					<button onclick="fun1()" class="menu">Тег <b>"h1"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun1()" class="menu">Тег <b>"h1"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
+
+					
 				</div>
 			</div>
-		</div>
-		<div class="cent">
-			<div class="osnovy">
-				<h1 class="osn">Основи "HTML & CSS"</h1>
 			</div>
-			<h1 class="zag" id="h1">Ознайомлення</h1>
-			<div class="ifrm">
-				<iframe src="video-h1.html" width="660" height="860" id="if" name="frim" frameborder="no" class="ifr">
-					
-				</iframe>
-						
-		
+			<div class="cent-block">
+				<div class="osnovy">
+					<h1 class="osn">Основи "HTML & CSS"</h1>
+				</div>
+				<div class="pidzag"><h1 class="zag" id="h1">Курс №1 "Розмітка тексту"</h1></div>
+				<h2 id="tag" class="hteg">Тег <b>"h1"</b></h2>	
+				<div class="script-block">
+				<h3 class="p-block" id="h3">Являється закриваючим тегом, використовується як заголовок.</h3>
+				<h2 class="red">Приклад:</h2>
+				<hr>
+					<video id="video" controls controlsList="nodownload" width="650"  height="auto">
+                        <source src="video/fok.mp4" type="video/mp4">
+                        <source src="video/fok.ogg" type="video/ogg">
+                        <source src="video/fok.webm" type="video/webm">
+                    </video>
+                    <hr>
+    </div>		
 			</div>
-		</div>
-		<div class="right-block" id="rb">
-			<div class="img2">
+			<div class="right-block">
+				<div class="img2">
 				<img src="foto/kurs.jpg" width="150" height="150">
 				<div class="div-menu2">
 				<p class="h1"> <b>Курси<br></b></p>
 				
-					<a href="video-h1.html" target="frim"><button type="button" onclick='document.getElementById("h1").innerHTML = " 1. Розмітка тексту: "' class="menu2">1. Розмітка тексту</b></button></a>
-					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					
+					<button type="button" onclick="myfun()" class="menu2">Тег <b>"h1"</b></button>
+					<button type="button" onclick="" class="menu2">Тег <b>"h1"</b></button>
 					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
 					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
 					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
@@ -95,32 +105,45 @@
 				</div>
 				</div>
 			</div>
-		
-		</div>
 		</div>
 	</div>
+
+
 	
-	
-		<script type="text/javascript">
-		function myfun() {
+	<p id="h"></p>
 
-			var o = document.getElementById("lb");
-			o.style.transform = "translateX(0px)";
-			o.style.transitionDuration = "1s";
+	<script type="text/javascript">
+		function fun1() {
+		
+			var sor = document.getElementsByTagName('source')
+			sor[0].src = "video/fol.mp4";
+			sor[1].src = "video/fol.ogg";
+			sor[1].src = "video/fol.webm";			
+			video.load();
+			
+		
+			
+			
+			document.getElementById('h1').innerHTML = x
+			
 
-			var u = document.getElementById("rb");
-			u.style.transform = "translateX(0px)";
-			u.style.transitionDuration = "1s";
-
-			var i = document.getElementById("if");
-			i.style.height = "860px";
-
-			var b = document.getElementById("bot");
-			b.style.display = "block";
-
-			var h = document.getElementById("h1");
-			h.innerHTML = "1. Розмітка тексту:";
 		}
-		</script>
+
+		function fun2() {
+		
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/fok.mp4";
+			sor[1].src = "video/fok.ogg";
+			sor[1].src = "video/fok.webm";			
+			video.load();
+			
+		
+			
+			
+			document.getElementById('h1').innerHTML = x
+			
+
+		}
+	</script>
 </body>
 </html>
