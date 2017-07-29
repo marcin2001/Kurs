@@ -49,13 +49,13 @@
 					<button onclick="fun6()" class="menu">Тег <b>"ol + li"</b></button>
 					<button onclick="fun7()" class="menu">Тег <b>"sup"</b></button>
 					<button onclick="fun8()" class="menu">Тег <b>"sub"</b></button>
-					<button onclick="fun9()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun10()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun11()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun12()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun13()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun14()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun15()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun9()" class="menu">Тег <b>"i"</b></button>
+					<button onclick="fun10()" class="menu">Тег <b>"b"</b></button>
+					<button onclick="fun11()" class="menu">Тег <b>"em"</b></button>
+					<button onclick="fun12()" class="menu">Тег <b>"strong"</b></button>
+					<button onclick="fun13()" class="menu">Тег <b>"mark"</b></button>
+					<button onclick="fun14()" class="menu">Тег <b>"del"</b></button>
+					<button onclick="fun15()" class="menu">Тег <b>"ins"</b></button>
 
 					
 				</div>
@@ -195,6 +195,36 @@
 			sor[0].src = "video/sub.mp4";
 			sor[1].src = "video/sub.ogg";
 			sor[2].src = "video/sub.webm";			
+			video.load();
+		}
+		
+		function fun9() {
+			title.innerHTML = 'Тег ' + '<b>' + '"i"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/i.mp4";
+			sor[1].src = "video/i.ogg";
+			sor[2].src = "video/i.webm";			
+			video.load();
+		}
+		
+		function fun10() {
+			title.innerHTML = 'Тег ' + '<b>' + '"b"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту жирним щрифтом.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/b.mp4";
+			sor[1].src = "video/b.ogg";
+			sor[2].src = "video/b.webm";			
+			video.load();
+		}
+		
+		function fun11() {
+			title.innerHTML = 'Тег ' + '<b>' + '"em"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'виділення тексту з особливим акцентом.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/b.mp4";
+			sor[1].src = "video/b.ogg";
+			sor[2].src = "video/b.webm";			
 			video.load();
 		}
 	</script>
