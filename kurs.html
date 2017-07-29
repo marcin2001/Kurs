@@ -140,8 +140,9 @@
 
 	<script type="text/javascript">
 	function text() {
-		var r = document.getElementById('remowe').innerHTML = "";
-		document.getElementById('css_text').style.display = "block"
+		var r = document.getElementById('remowe');
+		r = element.removeChild(element.firstChild);
+		
 	}
 	
 		var title = document.getElementById('title');
