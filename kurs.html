@@ -66,9 +66,9 @@
 					<h1 class="osn">Основи "HTML & CSS"</h1>
 				</div>
 				<div class="pidzag"><h1 class="zag" id="h1">Курс №1 "Розмітка тексту"</h1></div>
-				<h2 id="tag" class="hteg">Тег <b>"h1"</b></h2>	
+				<h2 id="title" class="hteg">Тег <b>"h1"</b></h2>	
 				<div class="script-block">
-				<h3 class="p-block" id="h3">Являється закриваючим тегом, використовується як заголовок.</h3>
+				<h3 class="p-block" id="theory">Являється закриваючим тегом, використовується як заголовок.</h3>
 				<h2 class="red">Приклад:</h2>
 				<hr>
 					<video id="video" controls controlsList="nodownload" width="650"  height="auto">
@@ -113,39 +113,58 @@
 	<p id="h"></p>
 
 	<script type="text/javascript">
+	
+		var title = document.getElementById('title');
+		var theory = document.getElementById('theory');
+		
 		function fun1() {
 			
-			var x= document.getElementById('tag');
-			x.innerHTML = 'Тег' + '<b>' + '"h1"' + '</b>';
-			
+			title.innerHTML = 'Тег ' + '<b>' + '"h1"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується як заголовок.';
 			var sor = document.getElementsByTagName('source')
-			sor[0].src = "video/h1.mp4";
+			sor[0].src = "video/h1.mp4";	
 			sor[1].src = "video/h1.ogg";
-			sor[1].src = "video/h1.webm";			
+			sor[2].src = "video/h1.webm";			
 			video.load();
 		}
 
 		function fun2() {
-			var x= document.getElementById('tag');
-			x.innerHTML = 'Тег ' + '<b>' + '"p"' + '</b>';
-				
-				
+			title.innerHTML = 'Тег ' + '<b>' + '"p"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується як абзац.';
 			var sor = document.getElementsByTagName('source');
 			sor[0].src = "video/p.mp4";
 			sor[1].src = "video/p.ogg";
-			sor[1].src = "video/p.webm";			
+			sor[2].src = "video/p.webm";			
 			video.load();
 		}
 		
 		function fun3() {
-			var x= document.getElementById('tag');
-			x.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
-				
-				
+			title.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
+			theory.innerHTML = 'Являється одиночним тегом, використовується для переносу строфи в інший рядок.';	
 			var sor = document.getElementsByTagName('source');
 			sor[0].src = "video/br.mp4";
 			sor[1].src = "video/br.ogg";
-			sor[1].src = "video/br.webm";			
+			sor[2].src = "video/br.webm";			
+			video.load();
+		}
+		
+		function fun4() {
+			title.innerHTML = 'Тег ' + '<b>' + '"hr"' + '</b>';
+			theory.innerHTML = 'Являється одиночним тегом, використовується як горизонтальна лінія.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/hr.mp4";
+			sor[1].src = "video/hr.ogg";
+			sor[2].src = "video/hr.webm";			
+			video.load();
+		}
+		
+		function fun5() {
+			title.innerHTML = 'Тег ' + '<b>' + '"ul + li"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується як невпорядкований список.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/ul+li.mp4";
+			sor[1].src = "video/ul+li.ogg";
+			sor[2].src = "video/ul+li.webm";			
 			video.load();
 		}
 	</script>
