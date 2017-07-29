@@ -136,6 +136,18 @@
 			sor[1].src = "video/p.webm";			
 			video.load();
 		}
+		
+		function fun3() {
+			var x= document.getElementById('tag');
+			x.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
+				
+				
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/br.mp4";
+			sor[1].src = "video/br.ogg";
+			sor[1].src = "video/br.webm";			
+			video.load();
+		}
 	</script>
 </body>
 </html>
