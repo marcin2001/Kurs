@@ -210,7 +210,7 @@
 		
 		function fun10() {
 			title.innerHTML = 'Тег ' + '<b>' + '"b"' + '</b>';
-			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту жирним щрифтом.';	
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту жирним шрифтом.';	
 			var sor = document.getElementsByTagName('source');
 			sor[0].src = "video/b.mp4";
 			sor[1].src = "video/b.ogg";
@@ -220,11 +220,21 @@
 		
 		function fun11() {
 			title.innerHTML = 'Тег ' + '<b>' + '"em"' + '</b>';
-			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'виділення тексту з особливим акцентом.';	
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту з особливим акцентом.';	
 			var sor = document.getElementsByTagName('source');
-			sor[0].src = "video/b.mp4";
-			sor[1].src = "video/b.ogg";
-			sor[2].src = "video/b.webm";			
+			sor[0].src = "video/em.mp4";
+			sor[1].src = "video/em.ogg";
+			sor[2].src = "video/em.webm";			
+			video.load();
+		}
+		
+		function fun12() {
+			title.innerHTML = 'Тег ' + '<b>' + '"strong"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення важливого тексту.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/strong.mp4";
+			sor[1].src = "video/strong.ogg";
+			sor[2].src = "video/strong.webm";			
 			video.load();
 		}
 	</script>
