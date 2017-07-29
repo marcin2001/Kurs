@@ -328,6 +328,15 @@ p.h1{
 	margin-left: -35px;
 	margin-top: -8px;
 }
+
+.div-menu12{
+	border: px solid black;
+	width: 220px;
+	height: 620px;
+	position: absolute;
+	margin-left: -35px;
+	margin-top: -8px;
+}
 .menu{
 	border: px solid black;
 	width: 220px;
@@ -346,7 +355,6 @@ p.h1{
 .menu:hover{
 	animation-name: men;
 	animation-duration: 0.2s;
-	animation-delay: ;
 	animation-iteration-count: 2;
 	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
 	background-image: linear-gradient(#00CD00,yellow,#00CD00);
@@ -428,16 +436,3 @@ button{
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 	transform: scale(1.05);
 }
-#css_text{
-	display: none;
-}
-.left-block2{
-	width: 250px;
-	height: 900px;
-	border: px solid black;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	background: white;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
-}	
