@@ -140,7 +140,12 @@
 
 	<script type="text/javascript">
 	function text() {
-		document.getElementById('remow').innerHTML = document.getElementById('css_text').innerHTML;
+		 a1 = document.getElementById('css_text');
+		 a1.style.display = "block"; 
+		 a1.style.marginTop = "15px"
+
+		 var elem = document.getElementById('text')
+		 elem.remove();
 	}
 	
 		var title = document.getElementById('title');
