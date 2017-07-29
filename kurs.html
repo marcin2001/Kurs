@@ -38,7 +38,7 @@
 				<div class="img">
 				<img src="foto/html5.png" width="150" height="150">
 				<br>
-				<div class="remow">
+				<div class="remow" id="remow">
 				<div class="div-menu" id="text">
 				<p class="h1"> <b>Курс №1 <br>"Розмітка тексту"</b></p>
 				
@@ -140,8 +140,8 @@
 
 	<script type="text/javascript">
 	function text() {
-		document.getElementById('css_text').style.display = "block";
-		document.getElementById('text').style.display = "none"
+		var r = document.getElementById('remowe').innerHTML = "";
+		document.getElementById('css_text').style.display = "block"
 	}
 	
 		var title = document.getElementById('title');
