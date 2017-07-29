@@ -394,7 +394,6 @@ p.h1{
 .menu2:hover{
 	animation-name: men2;
 	animation-duration: 0.2s;
-	animation-delay: ;
 	animation-iteration-count: 2;
 	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
 	background-image: linear-gradient(#00CD00,yellow,#00CD00);
@@ -432,6 +431,13 @@ button{
 #css_text{
 	display: none;
 }
-.abc{
-	display: none
+.left-block2{
+	width: 250px;
+	height: 900px;
+	border: px solid black;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
 }	
