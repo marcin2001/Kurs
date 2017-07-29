@@ -35,8 +35,8 @@
 	<div class="holovna">
 		<div class="vnytr">
 			<div class="left-block" >
-				<div class="img">
-				<img src="foto/html5.png" width="150" height="150">
+				<div class="img" id="block-img">
+				<img src="foto/html5.png" id="img" width="150" height="150">
 				<br>
 				<div class="remow" id="remow">
 				<div class="div-menu" id="text">
@@ -146,6 +146,9 @@
 
 		 var elem = document.getElementById('text')
 		 elem.remove();
+		 
+		 var img  = document.getElementById('img');
+		 img.src = "CSS1.png";
 	}
 	
 		var title = document.getElementById('title');
