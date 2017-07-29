@@ -240,11 +240,31 @@
 		
 		function fun13() {
 			title.innerHTML = 'Тег ' + '<b>' + '"mark"' + '</b>';
-			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для простого виділення тесту.';	
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для простого виділення тексту.';	
 			var sor = document.getElementsByTagName('source');
 			sor[0].src = "video/mark.mp4";
 			sor[1].src = "video/mark.ogg";
-			sor[2].src = "video/mark.webm";			
+			sor[2].src = "video/mark.webm";		
+			video.load();
+		}
+		
+		function fun14() {
+			title.innerHTML = 'Тег ' + '<b>' + '"del"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, виділяє тест' + '<br>' + 'який був видалений в нові версії докуиентаю';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/del.mp4";
+			sor[1].src = "video/del.ogg";
+			sor[2].src = "video/del.webm";		
+			video.load();
+		}
+		
+		function fun15() {
+			title.innerHTML = 'Тег ' + '<b>' + '"ins"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, виділяє тест' + '<br>' + 'який був добавлений в нові версії докуиентаю';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/ins.mp4";
+			sor[1].src = "video/ins.ogg";
+			sor[2].src = "video/ins.webm";		
 			video.load();
 		}
 	</script>
