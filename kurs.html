@@ -34,16 +34,16 @@
 						<!--header the and-->
 	<div class="holovna">
 		<div class="vnytr">
-			<div class="left-block">
+			<div class="left-block" id="text">
 				<div class="img">
 				<img src="foto/html5.png" width="150" height="150">
 				<br>
 				<div class="div-menu">
 				<p class="h1"> <b>Курс №1 <br>"Розмітка тексту"</b></p>
 				
-					<button onclick="fun1()" class="menu">Тег <b>"h1"</b></button>
-					<button onclick="fun2()" class="menu">Тег <b>"p"</b></button>
-					<button onclick="fun3()" class="menu">Тег <b>"br"</b></button>
+					<button onclick="fun_text1()" class="menu">Тег <b>"h1"</b></button>
+					<button onclick="fun_text2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun_text3()" class="menu">Тег <b>"br"</b></button>
 					<button onclick="fun4()" class="menu">Тег <b>"hr"</b></button>
 					<button onclick="fun5()" class="menu">Тег <b>"ul + li"</b></button>
 					<button onclick="fun6()" class="menu">Тег <b>"ol + li"</b></button>
@@ -56,6 +56,34 @@
 					<button onclick="fun13()" class="menu">Тег <b>"mark"</b></button>
 					<button onclick="fun14()" class="menu">Тег <b>"del"</b></button>
 					<button onclick="fun15()" class="menu">Тег <b>"ins"</b></button>
+
+					
+				</div>
+			</div>
+			</div>
+			
+			<div class="left-block" id="css_text">
+				<div class="img">
+				<img src="foto/html5.png" width="150" height="150">
+				<br>
+				<div class="div-menu">
+				<p class="h1"> <b>Курс №1 <br>"Розмітка тексту"</b></p>
+				
+					<button onclick="fun_css1()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun_css2()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun_css3()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun4()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun5()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun6()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun7()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun8()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun9()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun10()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun11()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun12()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun13()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun14()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun15()" class="menu">Тег <b>""</b></button>
 
 					
 				</div>
@@ -114,11 +142,14 @@
 
 	<script type="text/javascript">
 	function text() {
+		document.getElementById('css_text').style.display = "block";
+		document.getElementById('text').style.display = "none"
+	}
 	
 		var title = document.getElementById('title');
 		var theory = document.getElementById('theory');
 		
-		function fun1() {
+		function fun_text1() {
 			
 			title.innerHTML = 'Тег ' + '<b>' + '"h1"' + '</b>';
 			theory.innerHTML = 'Являється закриваючим тегом, використовується як заголовок.';
@@ -129,7 +160,7 @@
 			video.load();
 		}
 
-		function fun2() {
+		function fun_text2() {
 			title.innerHTML = 'Тег ' + '<b>' + '"p"' + '</b>';
 			theory.innerHTML = 'Являється закриваючим тегом, використовується як абзац.';
 			var sor = document.getElementsByTagName('source');
@@ -139,7 +170,7 @@
 			video.load();
 		}
 		
-		function fun3() {
+		function fun_text3() {
 			title.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
 			theory.innerHTML = 'Являється одиночним тегом, використовується для переносу' + '<br>' + 'строфи в інший рядок.';	
 			var sor = document.getElementsByTagName('source');
@@ -268,7 +299,6 @@
 			sor[2].src = "video/ins.webm";		
 			video.load();
 		}
-	}
 	</script>
 </body>
 </html>
