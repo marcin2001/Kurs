@@ -1,8 +1,3 @@
-	function text() {
-		
-
-		 
-	}
 	function text2() {
 		 var a1 = document.getElementById('css_text');
 		 a1.style.display = "block"; 
@@ -167,4 +162,4 @@
 			sor[2].src = "video/ins.webm";		
 			video.load();
 		}
-	</script>
+
