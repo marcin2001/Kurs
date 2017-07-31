@@ -1,112 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html leng="uk">
 <head>
-	<title>Registr</title>
+	<title> Курс/CSS</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="prostyl.css">
 </head>
-	<style type="text/css">
-		body{
-			
-		}
-
-		.in1 , .in2{
-
-			width: 170px;
-			height: 25px;
-			border-radius: 2px;
-			border-width: 2px;
-			border-color: lightgray;
-			font-size: 18px;
-			text-align: center;
-			
-		}
-		#p{
-			color: red;
-			font-size: 18px;
-			text-align: center;
-		}
-		.cont{
-			width: 250px;
-			height: 250px;
-			border:1px solid white;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 0px;
-			border-radius: 20px;
-			box-shadow: 0px 0px 10px 2px gray;
-			background: white;
-		}
-		.vn{
-			width: 170px;
-			height: 140px;
-			margin-top: 30px;
-			border: px solid black;
-			margin-right: auto;
-			margin-left: auto;
-		}
-		.bot{
-			margin-left: 55px;
-			width: 70px;
-			height: 25px;
-			margin-top: 5px;
-		}
-		.hr{
-			margin-top: 120px;
-			position: relative;
-			
-		}
-		hr{
-			height:3px;
-			background: lightgray;
-				}
-	</style>
 <body>
-<hr class="hr">
-	<div class="cont">
-	<div class="vn">
- <form>
- <label for="in">Логін:</label><br>
- <input type="text" name="" id="in" class="in1" autofocus required><br>
+<div class="head">
+	<div class="obg">
+		<h1 class="h0">HTML/css</h1>
+			<aside class="aside">
+						
+	<div class="hol1">
+				<div class="d1"></div>
+				<div class="d2"></div>
+				<div class="d3"></div>
 
- <label for="put">Пароль: </label><br>
- <input type="password" name="" id="put" class="in2"><br><br>
-  <input type="button" value="Увійти" class="bot" onClick="Input()">
- </form>
- </div>
- <p id="p"></p>
-</div>
-<hr>
+			<div class="d4">
+				<a href="" class="d"><div class="d5"><h1 class="oz" >Курси</h1></div></a>
+				<a href="" class="d"><div class="d6"><h1 class="oz1">Ознайомлення</h1></div></a>
+			</div>
+		</div>
 
+		<a href="" id="k" class="a1">Головна</a>
+				</aside>
+		
+				 	</div>
+				</div>
+				<div class="green"></div>
+		
+	
+						<!--header the and-->
+	<div class="holovna">
+		<div class="vnytr">
+			<div class="left-block" >
+				<div class="img" id="block-img">
+				<img src="foto/html5.png" id="img" width="auto" height="150">
+				<br>
+				<div class="remow" id="remow">
+				<div class="div-menu" id="text">
+				<p class="h1"> <b>Курс №1 <br>"Розмітка тексту"</b></p>
+				
+					<button onclick="fun_text1()" class="menu">Тег <b>"h1"</b></button>
+					<button onclick="fun_text2()" class="menu">Тег <b>"p"</b></button>
+					<button onclick="fun_text3()" class="menu">Тег <b>"br"</b></button>
+					<button onclick="fun4()" class="menu">Тег <b>"hr"</b></button>
+					<button onclick="fun5()" class="menu">Тег <b>"ul + li"</b></button>
+					<button onclick="fun6()" class="menu">Тег <b>"ol + li"</b></button>
+					<button onclick="fun7()" class="menu">Тег <b>"sup"</b></button>
+					<button onclick="fun8()" class="menu">Тег <b>"sub"</b></button>
+					<button onclick="fun9()" class="menu">Тег <b>"i"</b></button>
+					<button onclick="fun10()" class="menu">Тег <b>"b"</b></button>
+					<button onclick="fun11()" class="menu">Тег <b>"em"</b></button>
+					<button onclick="fun12()" class="menu">Тег <b>"strong"</b></button>
+					<button onclick="fun13()" class="menu">Тег <b>"mark"</b></button>
+					<button onclick="fun14()" class="menu">Тег <b>"del"</b></button>
+					<button onclick="fun15()" class="menu">Тег <b>"ins"</b></button>
+
+					
+				</div>
+				
+				<div class="div-menu" style="display:none;" id="css_text">
+				<p class="h1"> <b>Курс №1 + "CSS"</b></p>
+				
+					<button onclick="fun_text1()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun_text2()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun_text3()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun4()" class="menu">Тег <b>""</b></button>
+					<button onclick="fun5()" class="menu">Тег <b>"ul + li"</b></button>
+					<button onclick="fun6()" class="menu">Тег <b>"ol + li"</b></button>
+					<button onclick="fun7()" class="menu">Тег <b>"sup"</b></button>
+					<button onclick="fun8()" class="menu">Тег <b>"sub"</b></button>
+					<button onclick="fun9()" class="menu">Тег <b>"i"</b></button>
+					<button onclick="fun10()" class="menu">Тег <b>"b"</b></button>
+					<button onclick="fun11()" class="menu">Тег <b>"em"</b></button>
+					<button onclick="fun12()" class="menu">Тег <b>"strong"</b></button>
+					<button onclick="fun13()" class="menu">Тег <b>"mark"</b></button>
+					<button onclick="fun14()" class="menu">Тег <b>"del"</b></button>
+					<button onclick="fun15()" class="menu">Тег <b>"ins"</b></button>
+
+					
+				</div>
+				</div>
+			</div>
+			</div>
+			
+		
+			<div class="cent-block">
+				<div class="osnovy">
+					<h1 class="osn">Основи "HTML & CSS"</h1>
+				</div>
+				<div class="pidzag"><h1 class="zag" id="h1">Курс №1 "Розмітка тексту"</h1></div>
+				<h2 id="title" class="hteg">Тег <b>"h1"</b></h2>	
+				<div class="script-block">
+				<h3 class="p-block" id="theory">Являється закриваючим тегом, використовується як заголовок.</h3>
+				<h2 class="red">Приклад:</h2>
+				<hr>
+					<video id="video" controls controlsList="nodownload" width="650"  height="auto">
+                        <source src="video/h1.mp4" type="video/mp4">
+                        <source src="video/h1.ogg" type="video/ogg">
+                        <source src="video/h1.webm" type="video/webm">
+                    </video>
+                    <hr>
+    </div>		
+			</div>
+			<div class="right-block">
+				<div class="img2">
+				<img src="foto/kurs.jpg" width="150" height="150">
+				<div class="div-menu2">
+				<p class="h1"> <b>Курси<br></b></p>
+				
+					
+					<button type="button" onclick="text()" class="menu2"><b>Розмітка тексту</b></button>
+					<button type="button" onclick="text2()" class="menu2">Тег <b>"h1"</b></button>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					<a href="file:///D:/project1/video-h1.html" target="frim"><button type="button" onclick="document.getElementById('h1').innerHTML = 'Ознайомлення'" class="menu2">Тег <b>"h1"</b></button></a>
+					
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
 
 
 	<script type="text/javascript">
-function Input(){
+	function text() {
+		 var b1 = document.getElementById('text');
+		 b1.style.display = "block"; 
+		
+
+		 var elem = document.getElementById('css_text');
+		 elem.remove();
+		 
+		 var img  = document.getElementById('img');
+		 img.src = "foto/html5.png";
+	}
+	function text2() {
+		 var a1 = document.getElementById('css_text');
+		 a1.style.display = "block"; 
+		 a1.style.marginTop = "15px";
+		 var elem = document.getElementById('text')
+		 elem.remove();
+		 
+		 var img  = document.getElementById('img');
+		 img.src = "foto/CSS1.png";
+	}
 	
-Viyty = false;
-login = "";
-password = "";
-login = document.getElementById('in').value;
-login = login.toLowerCase();
-password =  document.getElementById('put').value;
-password = password.toLowerCase();
+		var title = document.getElementById('title');
+		var theory = document.getElementById('theory');
+		
+		function fun_text1() {
+			
+			title.innerHTML = 'Тег ' + '<b>' + '"h1"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується як заголовок.';
+			var sor = document.getElementsByTagName('source')
+			sor[0].src = "video/h1.mp4";	
+			sor[1].src = "video/h1.ogg";
+			sor[2].src = "video/h1.webm";			
+			video.load();
+		}
 
-
-
-if (login=="q" && password=="q") {
- Viyty = true;
- window.location="kurs.html"
-}
-
-
-
-if (Viyty == false) {document.getElementById('p').innerHTML = " Пароль і логін не збігаються!";
-	r = document.getElementById('in');
-	r.value = "";
-	w = document.getElementById('put');
-	w.value = "";}
-}
-
-
-</script>
+		function fun_text2() {
+			title.innerHTML = 'Тег ' + '<b>' + '"p"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується як абзац.';
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/p.mp4";
+			sor[1].src = "video/p.ogg";
+			sor[2].src = "video/p.webm";			
+			video.load();
+		}
+		
+		function fun_text3() {
+			title.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
+			theory.innerHTML = 'Являється одиночним тегом, використовується для переносу' + '<br>' + 'строфи в інший рядок.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/br.mp4";
+			sor[1].src = "video/br.ogg";
+			sor[2].src = "video/br.webm";			
+			video.load();
+		}
+		
+		function fun4() {
+			title.innerHTML = 'Тег ' + '<b>' + '"hr"' + '</b>';
+			theory.innerHTML = 'Являється одиночним тегом, використовується' + '<br>' + 'як горизонтальна лінія.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/hr.mp4";
+			sor[1].src = "video/hr.ogg";
+			sor[2].src = "video/hr.webm";			
+			video.load();
+		}
+		
+		function fun5() {
+			title.innerHTML = 'Тег ' + '<b>' + '"ul + li"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'як невпорядкований список.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/ul+li.mp4";
+			sor[1].src = "video/ul+li.ogg";
+			sor[2].src = "video/ul+li.webm";			
+			video.load();
+		}
+		
+		function fun6() {
+			title.innerHTML = 'Тег ' + '<b>' + '"ol + li"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'як впорядкований список.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/ol+li.mp4";
+			sor[1].src = "video/ol+li.ogg";
+			sor[2].src = "video/ol+li.webm";			
+			video.load();
+		}
+		
+		function fun7() {
+			title.innerHTML = 'Тег ' + '<b>' + '"sup"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'як верхній індекс.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/sup.mp4";
+			sor[1].src = "video/sup.ogg";
+			sor[2].src = "video/sup.webm";			
+			video.load();
+		}
+		
+		function fun8() {
+			title.innerHTML = 'Тег ' + '<b>' + '"sub"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'як нижній індекс.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/sub.mp4";
+			sor[1].src = "video/sub.ogg";
+			sor[2].src = "video/sub.webm";			
+			video.load();
+		}
+		
+		function fun9() {
+			title.innerHTML = 'Тег ' + '<b>' + '"i"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/i.mp4";
+			sor[1].src = "video/i.ogg";
+			sor[2].src = "video/i.webm";			
+			video.load();
+		}
+		
+		function fun10() {
+			title.innerHTML = 'Тег ' + '<b>' + '"b"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту жирним шрифтом.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/b.mp4";
+			sor[1].src = "video/b.ogg";
+			sor[2].src = "video/b.webm";			
+			video.load();
+		}
+		
+		function fun11() {
+			title.innerHTML = 'Тег ' + '<b>' + '"em"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення тексту з особливим акцентом.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/em.mp4";
+			sor[1].src = "video/em.ogg";
+			sor[2].src = "video/em.webm";			
+			video.load();
+		}
+		
+		function fun12() {
+			title.innerHTML = 'Тег ' + '<b>' + '"strong"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для виділення важливого тексту.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/strong.mp4";
+			sor[1].src = "video/strong.ogg";
+			sor[2].src = "video/strong.webm";			
+			video.load();
+		}
+		
+		function fun13() {
+			title.innerHTML = 'Тег ' + '<b>' + '"mark"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, використовується' + '<br>' + 'для простого виділення тексту.';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/mark.mp4";
+			sor[1].src = "video/mark.ogg";
+			sor[2].src = "video/mark.webm";		
+			video.load();
+		}
+		
+		function fun14() {
+			title.innerHTML = 'Тег ' + '<b>' + '"del"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, виділяє тест' + '<br>' + 'який був видалений в нові версії докуиентаю';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/del.mp4";
+			sor[1].src = "video/del.ogg";
+			sor[2].src = "video/del.webm";		
+			video.load();
+		}
+		
+		function fun15() {
+			title.innerHTML = 'Тег ' + '<b>' + '"ins"' + '</b>';
+			theory.innerHTML = 'Являється закриваючим тегом, виділяє тест' + '<br>' + 'який був добавлений в нові версії докуиентаю';	
+			var sor = document.getElementsByTagName('source');
+			sor[0].src = "video/ins.mp4";
+			sor[1].src = "video/ins.ogg";
+			sor[2].src = "video/ins.webm";		
+			video.load();
+		}
+	</script>
 </body>
 </html>
