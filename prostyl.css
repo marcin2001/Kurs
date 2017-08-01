@@ -348,17 +348,12 @@ a.a1:hover{
 	#wid{
 		width: 200px;
 	}
-	.sh{
-		margin-left: 0px;
-	}
-	.sh2{
-		margin-right: 0px
-	}
+
 }
 @media screen and (max-width: 770px) {
 	.cent-block{
 		width: 100%;
-		height: 1000px;
+		height: 950px;
 	}
 	.osnovy{
 		width: 100%
@@ -418,7 +413,6 @@ p.h1{
 .menu:hover{
 	animation-name: men;
 	animation-duration: 0.2s;
-	animation-delay: ;
 	animation-iteration-count: 2;
 	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
 	background-image: linear-gradient(#00CD00,yellow,#00CD00);
@@ -466,7 +460,6 @@ p.h1{
 .menu2:hover{
 	animation-name: men2;
 	animation-duration: 0.2s;
-	animation-delay: ;
 	animation-iteration-count: 2;
 	box-shadow: inset  0px -5px 0px 0px rgba(0,0,0,0.3);
 	background-image: linear-gradient(#00CD00,yellow,#00CD00);
