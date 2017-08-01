@@ -1,19 +1,76 @@
-	function text2() {
-		 var a1 = document.getElementById('css_text');
-		 a1.style.display = "block"; 
-		 a1.style.marginTop = "15px";
-		 var elem = document.getElementById('text')
-		 elem.remove();
-		 
-		 var img  = document.getElementById('img');
-		 img.src = "foto/CSS1.png";
-	}
-	
 		var title = document.getElementById('title');
 		var theory = document.getElementById('theory');
+		var selectedCourseName;
+		var selectedCourseIndex;
+		var selectedCourseObject;
+
+		var coursesData = [
+			{
+				name: 'h1',
+				src: [
+					"video/h1.mp4",
+					"video/h1.ogg",
+					"video/h1.webm"
+				],
+				title: 'H11111111',
+				theory: 'Являється закриваючим тегом, використовується як заголовок.'
+			},
+			{
+				name: 'p',
+				src: [
+					"video/p.mp4",
+					"video/p.ogg",
+					"video/p.webm"
+				],
+				title: 'PPPPPPPPPPPP',
+				theory: 'Являється закриваючим тегом, використовується як абзац.'
+			},
+			{
+				name: 'br',
+				src: [
+					"video/br.mp4",
+					"video/br.ogg",
+					"video/br.webm"
+				],
+				title: 'BRRRRRRR',
+				theory: 'Являється одиночним тегом, використовується для переносу' + '<br>' + 'строфи в інший рядок.'
+			}
+		];
+
+		function openCourse(which) {
+			console.log('clicked');
+			for (var i = 0; i < coursesData.length; i++) {
+				console.log(coursesData[i].name, selectedCourseName);
+				if(coursesData[i].name === selectedCourseName) {
+					selectedCourseIndex = i; 
+					break;
+				}
+			}
+			if(which === 'next') {
+				var selectedCourseObject = coursesData[selectedCourseIndex + 1]; 
+			}
+			if(which === 'prev') {
+				var selectedCourseObject = coursesData[selectedCourseIndex - 1];
+			}
+
+			loadCourse(selectedCourseObject);
+
+
+		}
+
+		function loadCourse(course) {
+			console.log('Course is', course);
+			title.innerHTML = course.title;
+			theory.innerHTML = course.theory;
+			var sor = document.getElementsByTagName('source')
+			sor[0].src = course.src[0];	
+			sor[1].src = course.src[1];
+			sor[2].src = course.src[2];			
+			video.load();
+		}
 		
-		function fun_text1() {
-			
+		function fun1() {
+			selectedCourseName = "h1";
 			title.innerHTML = 'Тег ' + '<b>' + '"h1"' + '</b>';
 			theory.innerHTML = 'Являється закриваючим тегом, використовується як заголовок.';
 			var sor = document.getElementsByTagName('source')
@@ -23,7 +80,8 @@
 			video.load();
 		}
 
-		function fun_text2() {
+		function fun2() {
+			selectedCourseName = "p";
 			title.innerHTML = 'Тег ' + '<b>' + '"p"' + '</b>';
 			theory.innerHTML = 'Являється закриваючим тегом, використовується як абзац.';
 			var sor = document.getElementsByTagName('source');
@@ -33,7 +91,8 @@
 			video.load();
 		}
 		
-		function fun_text3() {
+		function fun3() {
+			selectedCourseName = "br";
 			title.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
 			theory.innerHTML = 'Являється одиночним тегом, використовується для переносу' + '<br>' + 'строфи в інший рядок.';	
 			var sor = document.getElementsByTagName('source');
@@ -162,4 +221,3 @@
 			sor[2].src = "video/ins.webm";		
 			video.load();
 		}
-
