@@ -1,73 +1,28 @@
 		var title = document.getElementById('title');
 		var theory = document.getElementById('theory');
-		var selectedCourseName;
-		var selectedCourseIndex;
-		var selectedCourseObject;
+		
+		
+		let current = 0;
+		let pages = [fun1,fun2,fun3,fun4,fun5,fun6,fun7,fun8,fun9,fun10,fun11,fun12,fun13,fun14,fun15];
+		
+		document.getElementById('prev').addEventListener('click', function(){
+		    if (current = 0) {
+		      current = pages.length;
+		    }
+		    current--;
+		    let func = pages[current];
+		    func.call();
+		});
+		
+		document.getElementById('next').addEventListener('click', function(){
+			if (current = pages.length - 1) {
+		      current = -1;
+		    }
+		    current++;
+		    let func = pages[current];
+		    func.call();
+		});
 
-		var coursesData = [
-			{
-				name: 'h1',
-				src: [
-					"video/h1.mp4",
-					"video/h1.ogg",
-					"video/h1.webm"
-				],
-				title: 'H11111111',
-				theory: 'Являється закриваючим тегом, використовується як заголовок.'
-			},
-			{
-				name: 'p',
-				src: [
-					"video/p.mp4",
-					"video/p.ogg",
-					"video/p.webm"
-				],
-				title: 'PPPPPPPPPPPP',
-				theory: 'Являється закриваючим тегом, використовується як абзац.'
-			},
-			{
-				name: 'br',
-				src: [
-					"video/br.mp4",
-					"video/br.ogg",
-					"video/br.webm"
-				],
-				title: 'BRRRRRRR',
-				theory: 'Являється одиночним тегом, використовується для переносу' + '<br>' + 'строфи в інший рядок.'
-			}
-		];
-
-		function openCourse(which) {
-			console.log('clicked');
-			for (var i = 0; i < coursesData.length; i++) {
-				console.log(coursesData[i].name, selectedCourseName);
-				if(coursesData[i].name === selectedCourseName) {
-					selectedCourseIndex = i; 
-					break;
-				}
-			}
-			if(which === 'next') {
-				var selectedCourseObject = coursesData[selectedCourseIndex + 1]; 
-			}
-			if(which === 'prev') {
-				var selectedCourseObject = coursesData[selectedCourseIndex - 1];
-			}
-
-			loadCourse(selectedCourseObject);
-
-
-		}
-
-		function loadCourse(course) {
-			console.log('Course is', course);
-			title.innerHTML = course.title;
-			theory.innerHTML = course.theory;
-			var sor = document.getElementsByTagName('source')
-			sor[0].src = course.src[0];	
-			sor[1].src = course.src[1];
-			sor[2].src = course.src[2];			
-			video.load();
-		}
 		
 		function fun1() {
 			selectedCourseName = "h1";
