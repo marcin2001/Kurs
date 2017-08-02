@@ -2,30 +2,40 @@
 		var theory = document.getElementById('theory');
 		
 		
-		let current = 0;
-		let pages = [fun1,fun2,fun3,fun4,fun5,fun6,fun7,fun8,fun9,fun10,fun11,fun12,fun13,fun14,fun15];
+		var current = 0;
+		var pages = [fun1,fun2,fun3,fun4,fun5,fun6,fun7,fun8,fun9,fun10,fun11,fun12,fun13,fun14,fun15];
 		
 		document.getElementById('prev').addEventListener('click', function(){
-		    if (current = 0) {
-		      current = pages.length;
+		    if (current == 0) {
+		      
+		    }
+		    if (current == pages.length - 0) {
+		      	document.getElementById('next').innerHTML = "Курс №2";
+		    }
+		    if (current == pages.length - 1) {
+		      	document.getElementById('next').innerHTML = "Наступна";
 		    }
 		    current--;
-		    let func = pages[current];
+		    var func = pages[current];
 		    func.call();
 		});
 		
 		document.getElementById('next').addEventListener('click', function(){
-			if (current = pages.length - 1) {
-		      current = -1;
+			if (current == pages.length - 1) {
+		      	document.getElementById('next').innerHTML = "Курс №2";
+		      	window.location = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_call_call";
+		    }
+		    if (current == pages.length - 2) {
+		      	document.getElementById('next').innerHTML = "Курс №2";
+		      
 		    }
 		    current++;
-		    let func = pages[current];
+		    var func = pages[current];
 		    func.call();
 		});
 
 		
-		function fun1() {
-			selectedCourseName = "h1";
+		function fun1() {			
 			title.innerHTML = 'Тег ' + '<b>' + '"h1"' + '</b>';
 			theory.innerHTML = 'Являється закриваючим тегом, використовується як заголовок.';
 			var sor = document.getElementsByTagName('source')
@@ -35,8 +45,7 @@
 			video.load();
 		}
 
-		function fun2() {
-			selectedCourseName = "p";
+		function fun2() {	
 			title.innerHTML = 'Тег ' + '<b>' + '"p"' + '</b>';
 			theory.innerHTML = 'Являється закриваючим тегом, використовується як абзац.';
 			var sor = document.getElementsByTagName('source');
@@ -47,7 +56,6 @@
 		}
 		
 		function fun3() {
-			selectedCourseName = "br";
 			title.innerHTML = 'Тег ' + '<b>' + '"br"' + '</b>';
 			theory.innerHTML = 'Являється одиночним тегом, використовується для переносу' + '<br>' + 'строфи в інший рядок.';	
 			var sor = document.getElementsByTagName('source');
