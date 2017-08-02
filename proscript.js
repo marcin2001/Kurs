@@ -9,12 +9,6 @@
 		    if (current == 0) {
 		      
 		    }
-		    if (current == pages.length - 0) {
-		      	document.getElementById('next').innerHTML = "Курс №2";
-		    }
-		    if (current == pages.length - 1) {
-		      	document.getElementById('next').innerHTML = "Наступна";
-		    }
 		    current--;
 		    var func = pages[current];
 		    func.call();
@@ -22,7 +16,7 @@
 		
 		document.getElementById('next').addEventListener('click', function(){
 			if (current == pages.length - 1) {
-		      	document.getElementById('next').innerHTML = "Курс №2";
+		      	document.getElementById('next').innerHTML = '<b>' + "Курс №2" + '</b>';
 		      	window.location = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_call_call";
 		    }
 		    if (current == pages.length - 2) {
