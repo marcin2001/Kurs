@@ -252,8 +252,13 @@
 		color: white;
 		transform: translateX(1) translateY(1);
 	}
-	@media screen and (max-width: 301px){
+@media screen and (max-width: 360px){
 		.kurs{
-			width: 250px;
+			width: 200px;
+		}
+	}
+	@media screen and (max-device-width: 360px){
+		.kurs{
+			width: 200px;
 		}
 	}
