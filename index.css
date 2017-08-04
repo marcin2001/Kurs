@@ -193,7 +193,7 @@
 	.content{
 		display: flex;
 		max-width: 950px;
-		max-height: 850px;
+		height: 870px;
 		border: 1px solid white;
 		margin-left: auto;
 		margin-right: auto;
