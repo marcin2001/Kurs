@@ -285,7 +285,7 @@ a.a1:hover{
 	background:  #00CD00;
 	font-size: 17px;
 	margin-left: 40px;
-	display: block;
+	display: none;
 }
 .show2{
 	width: 200px;
@@ -295,7 +295,7 @@ a.a1:hover{
 	background:  #00CD00;
 	font-size: 17px;
 	margin-right: 40px;
-	display: block;
+	display: none;
 }
 .show1:hover{
 	color: white;
