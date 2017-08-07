@@ -283,3 +283,7 @@ a.a1:hover{
 		hr{
 			margin-top: 170px
 		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
